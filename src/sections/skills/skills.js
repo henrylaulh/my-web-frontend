@@ -4,7 +4,9 @@ import './skills.css'
 class Skills extends Component {
     render(){
         return (
-            <div className="section skills">This is skills</div>
+            <div className="section skills">
+                <span className="title">Skills</span>
+            </div>
         );
     }
 }

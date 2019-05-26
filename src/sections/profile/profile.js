@@ -4,7 +4,9 @@ import './profile.css'
 class Profile extends Component {
     render(){
         return (
-            <div className="section profile">This is profile</div>
+            <div className="section profile">
+                <span className="title">Profile</span>
+            </div>
         );
     }
 }

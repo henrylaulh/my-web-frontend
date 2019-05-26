@@ -7,12 +7,14 @@
 /coverage
 
 # production
-# /build
+# Uncomment below for pushing to git
+/build
 
-src/*
-public/*
-build/static/css/*.map
-build/static/js/*.map
+# Uncomment below for pushing to heroku
+# src/*
+# public/*
+# build/static/css/*.map
+# build/static/js/*.map
 
 # misc
 .DS_Store
