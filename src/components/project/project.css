@@ -1,12 +1,45 @@
 .project{
     display: inline-block;
     width: 50%;
+    height: 350px;
     position: relative;
     box-sizing: border-box;
+    margin:-2px;
+    overflow: hidden;
 }
 
-.project .image{
+.project .inner-div{
     width:100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.8s ease-in-out;
+}
+
+.project:hover .inner-div{
+    transform: scale(1.2);
+}
+
+.project:hover .desc{
+    opacity: 1;
+}
+
+.project:hover .desc span{
+    opacity: 1;
+    margin-left: 0%;
+}
+
+.project.full-width{
+    width:100%;
+}
+
+.project.width-60{
+    width:60%; 
+}
+
+.project.width-40{
+    width:40%;
 }
 
 .project a{
@@ -20,7 +53,21 @@
     position: absolute;
     top:0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bcbcbc;
+    padding:10px 20px;
+    box-sizing: border-box;
 }
+
+.project .desc span{
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out,
+                margin-left 0.9s ease-in-out;
+    margin-left: -40%;
+    display: inline-block;
+} 
