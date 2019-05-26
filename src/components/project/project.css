@@ -1,0 +1,8 @@
+.project{
+    display: inline-block;
+    width: 50%;
+}
+
+.project .image{
+    width:100%;
+}

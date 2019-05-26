@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import ReactPageScroller from "react-page-scroller";
+// import ReactPageScroller from "react-page-scroller";
 
 // Components
 import Home from './sections/home/home'
@@ -23,14 +23,12 @@ class App extends Component {
   render() {
     return (
       <div className="main">
-        <ReactPageScroller ref={c => this.reactPageScroller = c}>
           <Home></Home> 
           <Profile></Profile> 
           <Experience></Experience> 
           <Projects></Projects> 
           <Skills></Skills> 
           <Contact></Contact> 
-        </ReactPageScroller>
       </div>
 
     );
